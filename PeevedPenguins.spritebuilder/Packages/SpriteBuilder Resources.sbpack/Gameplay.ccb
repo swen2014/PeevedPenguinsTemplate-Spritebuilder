@@ -787,7 +787,7 @@
 				<key>displayName</key>
 				<string>CCNode</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_contentNode</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -852,6 +852,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -885,8 +887,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-407.30654907226562</real>
-							<real>237.47286987304688</real>
+							<real>51.104892730712891</real>
+							<real>283.47238159179688</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
