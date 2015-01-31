@@ -17,6 +17,8 @@
     CCNode *_pullbackNode;
     CCNode *_mouseJointNode;
     CCPhysicsJoint *_mouseJoint;
+    CCNode *_currentPenguin;
+    CCPhysicsJoint *_penguinCatapultJoint;
 }
 
 // is called when CCB file has completed loading
@@ -39,7 +41,7 @@
 //    [self launchPenguin];
 //}
 
--(void) touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+-(void) touchBegan:(CCTouch *)touch withEvent:(UIEvent *)event
 {
     CGPoint touchLocation = [touch locationInNode:_contentNode];
     
@@ -55,7 +57,7 @@
     }
 }
 
-- (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+- (void)touchMoved:(CCTouch *)touch withEvent:(UIEvent *)event
 {
     // whenever touches move, update the position of the mouseJointNode to the touch position
     CGPoint touchLocation = [touch locationInNode:_contentNode];
@@ -70,7 +72,7 @@
     [self releaseCatapult];
 }
 
--(void) touchCancelled:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+-(void) touchCancelled:(UITouch *)touch withEvent:(UIEvent *)event
 {
     // when touches are cancelled, meaning the user drags their finger off the screen or onto something else, release the catapult
     [self releaseCatapult];
