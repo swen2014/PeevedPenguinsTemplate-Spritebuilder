@@ -7,6 +7,7 @@
 //
 
 #import "Gameplay.h"
+#import "Penguin.h"
 
 
 @implementation Gameplay {
@@ -14,12 +15,18 @@
     CCNode *_catapultArm;
     CCNode *_levelNode;
     CCNode *_contentNode;
+    
     CCNode *_pullbackNode;
     CCNode *_mouseJointNode;
     CCPhysicsJoint *_mouseJoint;
+    
     CCNode *_currentPenguin;
+    //Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
 }
+
+
+#pragma mark - Init
 
 // is called when CCB file has completed loading
 - (void)didLoadFromCCB {
@@ -43,6 +50,36 @@
 //- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
 //    [self launchPenguin];
 //}
+
+#pragma mark - Game Actions
+
+- (void)retry {
+    // reload this level
+    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay"]];
+}
+
+- (void)releaseCatapult {
+    if (_mouseJoint != nil)
+    {
+        // releases the joint and lets the catapult snap back
+        [_mouseJoint invalidate];
+        _mouseJoint = nil;
+        
+        // releases the joint and lets the penguin fly
+        [_penguinCatapultJoint invalidate];
+        _penguinCatapultJoint = nil;
+        
+        // after snapping rotation is fine
+        _currentPenguin.physicsBody.allowsRotation = TRUE;
+        
+        // follow the flying penguin
+        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+        [_contentNode runAction:follow];
+    }
+}
+
+
+#pragma mark - Touch Handling
 
 -(void) touchBegan:(CCTouch *)touch withEvent:(UIEvent *)event
 {
@@ -94,25 +131,8 @@
     // when touches are cancelled, meaning the user drags their finger off the screen or onto something else, release the catapult
     [self releaseCatapult];
 }
-- (void)releaseCatapult {
-    if (_mouseJoint != nil)
-    {
-        // releases the joint and lets the catapult snap back
-        [_mouseJoint invalidate];
-        _mouseJoint = nil;
-        
-        // releases the joint and lets the penguin fly
-        [_penguinCatapultJoint invalidate];
-        _penguinCatapultJoint = nil;
-        
-        // after snapping rotation is fine
-        _currentPenguin.physicsBody.allowsRotation = TRUE;
-        
-        // follow the flying penguin
-        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
-        [_contentNode runAction:follow];
-    }
-}
+
+#pragma mark - Collision Handling
 
 - (void)launchPenguin {
     // loads the Penguin.ccb we have set up in Spritebuilder
@@ -140,8 +160,5 @@
 }
 
 
-- (void)retry {
-    // reload this level
-    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay"]];
-}
+
 @end
