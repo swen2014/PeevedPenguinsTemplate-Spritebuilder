@@ -71,7 +71,7 @@
 					<key>cornerRadius</key>
 					<real>14</real>
 					<key>density</key>
-					<real>10</real>
+					<real>250</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -213,7 +213,7 @@
 					<key>cornerRadius</key>
 					<real>14</real>
 					<key>density</key>
-					<real>10</real>
+					<real>250</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -355,7 +355,7 @@
 					<key>cornerRadius</key>
 					<real>14</real>
 					<key>density</key>
-					<real>10</real>
+					<real>250</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -497,7 +497,7 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>1</real>
+					<real>200</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -670,7 +670,7 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>1</real>
+					<real>200</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -843,7 +843,7 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>1</real>
+					<real>200</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -1016,13 +1016,13 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>1</real>
+					<real>200</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
 					<real>0.30000001192092896</real>
 					<key>friction</key>
-					<real>0.30000001192092896</real>
+					<real>1</real>
 					<key>points</key>
 					<array>
 						<array>
@@ -1189,13 +1189,13 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>1</real>
+					<real>200</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
 					<real>0.30000001192092896</real>
 					<key>friction</key>
-					<real>0.30000001192092896</real>
+					<real>1</real>
 					<key>points</key>
 					<array>
 						<array>
@@ -1255,7 +1255,7 @@
 						<key>value</key>
 						<array>
 							<real>73</real>
-							<real>70</real>
+							<real>69</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1362,13 +1362,13 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>1</real>
+					<real>200</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
 					<real>0.30000001192092896</real>
 					<key>friction</key>
-					<real>0.30000001192092896</real>
+					<real>1</real>
 					<key>points</key>
 					<array>
 						<array>
@@ -1535,7 +1535,7 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>1</real>
+					<real>200</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -1675,6 +1675,8 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
