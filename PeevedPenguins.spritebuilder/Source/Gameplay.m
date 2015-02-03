@@ -194,21 +194,21 @@ static const float MIN_SPEED = 5.f;
 //    //to deactivate collisions for this invisible node
 //    _mouseJointNode.physicsBody.collisionMask = @[];
 //}
--(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB
-{
-    CCLOG(@"Something collided with a seal!");
-}
-
-//- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
-//    float energy = [pair totalKineticEnergy];
-//    
-//    // if energy is large enough, remove the seal
-//    if (energy > 0.f) {
-//        [[_physicsNode space] addPostStepBlock:^{
-//            [self sealRemoved:nodeA];
-//        } key:nodeA];
-//    }
+//-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB
+//{
+//    CCLOG(@"Something collided with a seal!");
 //}
+
+- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+    float energy = [pair totalKineticEnergy];
+    
+    // if energy is large enough, remove the seal
+    if (energy > 0.f) {
+        [[_physicsNode space] addPostStepBlock:^{
+            [self sealRemoved:nodeA];
+        } key:nodeA];
+    }
+}
 
 #pragma mark - Update
 
