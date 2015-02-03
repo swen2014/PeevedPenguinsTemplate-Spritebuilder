@@ -77,14 +77,11 @@ static const float MIN_SPEED = 5.f;
         _currentPenguin.physicsBody.allowsRotation = TRUE;
 //         _currentPenguin.launched = YES;
         _currentPenguin.launched = TRUE;
+    
         
         // follow the flying penguin
         _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
         [_contentNode runAction:_followPenguin];
-        
-//        // follow the flying penguin
-//        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
-//        [_contentNode runAction:follow];
     }
 }
 
@@ -236,7 +233,7 @@ static const float MIN_SPEED = 5.f;
     if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
         [self nextAttempt];
         return;
-    }
+        }
     }
 }
 
