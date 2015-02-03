@@ -1283,7 +1283,7 @@
 						<key>value</key>
 						<array>
 							<real>37.000030517578125</real>
-							<real>18</real>
+							<real>15</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1373,8 +1373,6 @@
 						<string>Seal.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1409,7 +1407,7 @@
 						<key>value</key>
 						<array>
 							<real>285.00003051757812</real>
-							<real>17.5</real>
+							<real>15</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1437,6 +1435,8 @@
 						<string>Seal.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1471,7 +1471,7 @@
 						<key>value</key>
 						<array>
 							<real>194.00003051757812</real>
-							<real>18.5</real>
+							<real>15.5</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
