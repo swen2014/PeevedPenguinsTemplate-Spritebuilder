@@ -116,7 +116,7 @@ static const float MIN_SPEED = 5.f;
 
 #pragma mark - Touch Handling
 
--(void) touchBegan:(CCTouch *)touch withEvent:(UIEvent *)event
+-(void) touchBegan:(    *)touch withEvent:(UIEvent *)event
 {
     CGPoint touchLocation = [touch locationInNode:_contentNode];
     
