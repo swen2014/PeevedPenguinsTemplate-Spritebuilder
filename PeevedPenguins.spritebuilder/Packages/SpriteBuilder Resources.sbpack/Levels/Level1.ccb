@@ -71,7 +71,7 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>150</real>
+					<real>30</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -211,6 +211,8 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -244,7 +246,7 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>150</real>
+					<real>30</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -417,7 +419,7 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>150</real>
+					<real>30</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -590,7 +592,7 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>150</real>
+					<real>25</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -763,7 +765,7 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>150</real>
+					<real>25</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -936,7 +938,7 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>150</real>
+					<real>50</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -1109,7 +1111,7 @@
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
-					<real>150</real>
+					<real>50</real>
 					<key>dynamic</key>
 					<true/>
 					<key>elasticity</key>
@@ -1435,8 +1437,6 @@
 						<string>Seal.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
